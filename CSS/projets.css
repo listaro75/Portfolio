@@ -1,0 +1,106 @@
+/*============================================================================================================================*/
+@import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap);
+
+
+*{
+    font-family: 'Montserrat';
+}
+
+body{
+    margin: 0 auto;
+}
+/*==========================================================profil=========================================================*/
+
+/*===================================================== menu de navigation ==================================================*/
+.top-page{
+    background-color: rgb(26, 25, 25);
+    padding: 20px 0;
+}
+
+header.header {
+    display: flex;
+    align-items: center;
+}
+
+header.header img{
+width: 100px;
+margin-left: 8%;
+}
+nav.nav {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    width: 500px;
+    margin-left: 55%;
+
+}
+
+nav.nav li{
+    color: white;
+}
+
+nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px;
+}
+ul li a{
+    color: white;
+    letter-spacing: 0.1rem;
+}
+
+ul li a:hover{
+    color: #848085;
+    text-decoration: underline;
+}
+
+#la{
+    font-weight: 700;
+}
+
+li.li {
+    font-size: 12px;
+}
+
+/*===================================================== footer ======================================================= */
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 600;
+    padding: 3% 100px;
+    color: whitesmoke;
+    background-color: rgb(26, 25, 25);
+}
+
+footer a.cgv {
+    text-decoration: none;
+    color: aliceblue;
+}
+
+/*====================================================== scrollbar===================================================*/
+
+::-webkit-scrollbar {
+    width: 0;
+    background: transparent;
+}
+
+.scrollbar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 15px;
+    height: 0;
+    opacity: 0;
+    background: linear-gradient(to top, #480052, #680375);
+}
+.clickScrollbar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 15px;
+    height: 100%;
+    background: rgba(170,170,170,0.356);
+}

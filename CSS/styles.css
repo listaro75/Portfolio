@@ -1,0 +1,279 @@
+/*============================================================================================================================*/
+@import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap);
+
+
+*{
+    font-family: 'Montserrat';
+}
+
+body{
+    margin: 0 auto;
+}
+/*===================================================== Tête de page ==========================================================*/
+
+header.header {
+    display: flex;
+    align-items: center;
+}
+
+header.header img{
+width: 100px;
+margin-left: 8%;
+}
+
+section.top-page {
+    background: url("../Images/chambres_modéliser.jpg   ");
+    height: 80vh;
+    padding: 25px;
+}
+
+/*=================================================== Page de bienvenu =======================================================*/
+.landing-page{
+    padding: 20px 10px;
+}
+.big-title{
+    color: white;
+    font-size: 60px;
+    font-weight: 600;
+    text-align: center;
+}
+.small-title{
+    color: rgb(190, 190, 190);
+    font-size: 20px;
+    text-align: center;
+}
+
+.scroll-down {
+    color: white;
+    text-decoration: none;
+    position: absolute;
+    bottom: 200px;
+}
+
+/*===================================================== menu de navigation ==================================================*/
+
+nav.nav {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    width: 500px;
+    margin-left: 55%;
+
+}
+
+nav.nav li{
+    color: white;
+}
+
+nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px;
+}
+ul li a{
+    color: white;
+    letter-spacing: 0.1rem;
+}
+
+ul li a:hover{
+    color: #848085;
+    text-decoration: underline;
+}
+
+#la{
+    font-weight: 700;
+}
+
+li.li {
+    font-size: 12px;
+}
+/*==========================================================profil=========================================================*/
+.profil{
+    background-color: #74407a;
+    overflow-x: hidden;
+    
+}
+
+p.p {
+    text-align: justify;
+    width: 500px;
+    font-size: 20px;
+    color: white;
+    margin: 30px;
+
+}
+.lucien{
+    font-weight: 500;
+}
+
+.grise {
+    background-color: rgb(36, 21, 41);
+    width: 600px;
+    margin-left: 15%;
+    align-items: center;
+    justify-content: space-evenly;
+    display: flex;
+    transform: translateX(-400%);
+    transition: transform 1.0s ease;
+}
+.image-profil{
+    display: flex;
+    margin-bottom: 10%;
+    margin-left: 50%;
+    width: 500px ;
+    transform: translateX(-300%);
+    transition: transform 1.5s ease;
+}
+.box:nth-of-type(even){
+
+    transform: translateX(400%);
+
+}
+
+.box.show{
+    transform: translateX(0);
+}
+
+
+
+
+/*======================================================= service ==========================================================*/
+
+.services {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 50px;
+}
+
+.service-item {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.delivery-icon {
+    font-size: 50px;
+    color: blueviolet;
+}
+
+.service-details {
+    font-weight: 600;
+    width: 200px;
+    text-align: center;
+}
+
+/*================================================================= best picture ================================================*/
+
+.section-title {
+    font-size: 50px;
+    font-weight: 900;
+    position: relative;
+    margin-top: 10%;
+}
+
+.section-title::before{
+    content: "";
+    position: absolute;
+    background-color: blueviolet;
+    width: 50px;
+    height: 7px;
+    bottom: 0;
+}
+
+.bests-items {
+    margin: 100px;
+}
+.best-projets {
+    min-height: 500px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.projet-box {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    min-width: 350px;
+    height: 500px;
+    flex: 1;
+}
+
+.projet1 {
+    background-image: url(../Images/image-1.jpg);
+}
+
+.projet2 {
+    background-image: url(../Images/image-2.jpg);
+}
+
+.projet3 {
+    background-image: url(../Images/SabreLuc.png);
+}
+
+.projet4 {
+    background-image: url(../Images/image-3.jpg);
+}
+
+.projet-details {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: #FFFFFFDF;
+    padding: 5px 20px;
+}
+
+.projet-name {
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 3px;
+}
+
+.projet-price {
+    color: blueviolet;
+    font-weight: 800;
+    font-size: 14px;
+    line-height: 3px;
+}
+
+/*===================================================== footer ======================================================= */
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 600;
+    padding: 3% 100px;
+    color: whitesmoke;
+    background-color: rgb(45, 12, 54);
+}
+
+footer a.cgv {
+    text-decoration: none;
+    color: aliceblue;
+}
+
+/*====================================================== scrollbar===================================================*/
+
+::-webkit-scrollbar {
+    width: 0;
+    background: transparent;
+}
+
+.scrollbar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 15px;
+    height: 0;
+    opacity: 0;
+    background: linear-gradient(to top, #480052, #680375);
+}
+.clickScrollbar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 15px;
+    height: 100%;
+    background: rgba(170,170,170,0.356);
+}
