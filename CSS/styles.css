@@ -23,7 +23,7 @@ margin-left: 8%;
 }
 
 section.top-page {
-    background: url("../Images/chambres_modéliser.jpg   ");
+    background: url("../Images/Accueil/chambres_modéliser.jpg   ");
     height: 80vh;
     padding: 25px;
 }
@@ -200,19 +200,19 @@ p.p {
 }
 
 .projet1 {
-    background-image: url(../Images/image-1.jpg);
+    background-image: url(../Images/Accueil/image-1.jpg);
 }
 
 .projet2 {
-    background-image: url(../Images/image-2.jpg);
+    background-image: url(../Images/Accueil/image-2.jpg);
 }
 
 .projet3 {
-    background-image: url(../Images/SabreLuc.png);
+    background-image: url(../Images/Accueil/image-4.jpg);
 }
 
 .projet4 {
-    background-image: url(../Images/image-3.jpg);
+    background-image: url(../Images/Accueil/image-3.jpg);
 }
 
 .projet-details {
@@ -251,6 +251,11 @@ footer {
 footer a.cgv {
     text-decoration: none;
     color: aliceblue;
+}
+footer li img{
+    width: 25px;
+    color: white;
+    list-style-type: none;
 }
 
 /*====================================================== scrollbar===================================================*/
